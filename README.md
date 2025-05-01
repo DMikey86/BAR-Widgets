@@ -16,7 +16,7 @@ You will have to delete/move `gui_gridmenu.lua` out of the Widgets folder to go 
 1. Download [Gridmenu_config.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/gridmenu_config.lua), [Gridmenu_layout.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/gridmenu_layouts.lua) and [Gui_gridmenu.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/gui_gridmenu.lua) files.
 2. Create another folder inside **LuaUI** folder call `Configs` image below for context.
 3. Paste `gridmenu_config.lua` & `gridmenu_layout.lua` into your `/Beyond-All-Reason/data/LuaUI/Configs/` folder
-4. Paste `gui_gridmenu.lua` inside your `/Beyond-All-Reason/data/LauUI/Widgets/` folder
+4. Paste `gui_gridmenu.lua` inside your `/Beyond-All-Reason/data/LuaUI/Widgets/` folder
 5. Paste `uikeys.txt` into your `/Beyond-All-Reason/data/` folder
 6. Launch Beyond-All-Reason
 
