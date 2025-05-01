@@ -1,0 +1,21 @@
+==============================================
+= HOW TO INSTALL GUIDE FOR EXPANDED GRIDMENU =
+==============================================
+
+1. Copy "Configs" & "Widgets" folders
+2. Paste into your /Beyond-All-Reason/data/LuaUI/ folder
+3. Launch Beyond-All-Reason
+
+
+=============================================
+= SETUP =
+=============================================
+
+1. Start a Skirmish game
+2. Open Settings
+3. Under "Custom" tab enable [Grid menu] widget
+4. Under "Control" tab and "Hotkeys" heading,
+5. Enable [Custom] in Keybind Preset
+6. Toggle Use [Gridmenu]
+7. Toggle [Factory build mode hotkeys]
+8. You can now play with the new Expanded Gridmenu.
