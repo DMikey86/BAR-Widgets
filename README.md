@@ -23,3 +23,4 @@ This widget is to help alleviate the 2nd page unit syndrome, where units get for
 7. Toggle [Factory build mode hotkeys]
 8. You can now play with the new Expanded Gridmenu.
 
+![control-hotkeys.png]
