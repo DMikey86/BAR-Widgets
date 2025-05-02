@@ -14,7 +14,7 @@ You will have to delete/move `gui_gridmenu.lua` out of the Widgets folder to go 
 
 # Installation Guide
 1. Download [Gridmenu_config.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/gridmenu_config.lua), [Gridmenu_layout.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/gridmenu_layouts.lua) and [Gui_gridmenu.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/gui_gridmenu.lua) files.
-2. Create another folder inside **LuaUI** folder call `Configs` image below for context.
+2. Create another folder inside <ins>**LuaUI**</ins> folder call `Configs` image below for context.
 3. Paste `gridmenu_config.lua` & `gridmenu_layout.lua` into your `/Beyond-All-Reason/data/LuaUI/Configs/` folder
 4. Paste `gui_gridmenu.lua` inside your `/Beyond-All-Reason/data/LuaUI/Widgets/` folder
 5. Paste `uikeys.txt` into your `/Beyond-All-Reason/data/` folder
@@ -26,7 +26,7 @@ You will have to delete/move `gui_gridmenu.lua` out of the Widgets folder to go 
 # In-game Settings Setup
 1. Start a Skirmish game
 2. Open Settings make sure `Advanced` is selected.
-3. Under `Custom` tab enable `Grid menu` widget
+3. Under `Custom` tab enable `Expanded Grid menu` widget
 4. Under `Control` tab and **<ins>Hotkeys</ins>** heading,
 5. Enable `Custom` in Keybind Preset
 6. Toggle `Use Gridmenu`
