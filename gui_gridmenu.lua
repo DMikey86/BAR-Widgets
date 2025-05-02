@@ -12,7 +12,7 @@ local widget = widget ---@type Widget
 
 function widget:GetInfo()
 	return {
-		name = "Grid menu",
+		name = "Expanded Grid menu",
 		desc = "Build menu with grid hotkeys",
 		author = "Floris, grid by badosu and resopmok, Expanded grid by Darth_Mikey",
 		date = "October 2021, (Expanded Grid) May 2025",
