@@ -36,5 +36,5 @@ You will have to delete/move `gui_gridmenu.lua` out of the Widgets folder to go 
 # Hotkey Setup image
 ![Control_Hotkeys](https://github.com/user-attachments/assets/94ecac7c-6479-41e0-8f0c-f1de8f30c59a)
 
-# Setting Advanced Window image
+# In-game Setting Advanced Window image
 ![settings](https://github.com/user-attachments/assets/d45cc7f8-5a14-4aeb-9c54-cec43124992b)
