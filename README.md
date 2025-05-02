@@ -25,7 +25,7 @@ You will have to delete/move `gui_gridmenu.lua` out of the Widgets folder to go 
 
 # In-game Settings Setup
 1. Start a Skirmish game
-2. Open Settings make sure `Advanced` is selected.
+2. Open <ins>**Settings**</ins> make sure `Advanced` is selected.
 3. Under `Custom` tab enable `Expanded Grid menu` widget
 4. Under `Control` tab and **<ins>Hotkeys</ins>** heading,
 5. Enable `Custom` in Keybind Preset
