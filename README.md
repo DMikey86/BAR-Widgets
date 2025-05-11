@@ -6,6 +6,8 @@ This widget is to help alleviate the 2nd page unit syndrome, where units get for
 > [!NOTE]
 > Still a WIP for toggable option to switch between Grid menu & Expanded Grid menu in Custom settings.
 
+![armt2botlab3x6menu](https://github.com/user-attachments/assets/81194621-93ee-483b-8268-36435c8f8421)
+
 # Features
 - Expands the Grid menu panel from 3x4 to 3x6 panel to allow an extra 6 slot visibility in grid menu.
 
