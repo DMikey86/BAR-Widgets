@@ -4,7 +4,7 @@ Expand your Grid menu from 3x4 panel to 3x6 grid menu panel for BAR (Beyond All 
 This widget is to help alleviate the 2nd page unit syndrome, where units get forgotten for just being on the 2nd page of factory/build menus.
 
 > [!NOTE]
-> Still a WIP for toggable option to switch between Grid menu & Expanded Grid menu in Custom settings.
+> Still a WIP to make a toggable option to switch between Grid menu & Expanded Grid menu in Custom settings.
 
 ![armt2botlab3x6menu](https://github.com/user-attachments/assets/81194621-93ee-483b-8268-36435c8f8421)
 
