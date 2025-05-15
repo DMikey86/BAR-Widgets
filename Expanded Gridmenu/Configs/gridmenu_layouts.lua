@@ -1233,7 +1233,7 @@ local unitGrids = {
 	-- T1 sea con
 	armcs = {
 		{
-			{ "armmex", "armtide", },                         -- mex, tidal
+			{ "armmex", "armtide", "", "", "armuwgeo" },      -- mex, tidal, offshore geo
 			{ "armfmkr", "armgeo", },                         -- floating T1 converter, geo
 			{ "armuwes", "armuwms", },                        -- uw e stor, uw m stor
 		},
@@ -1244,7 +1244,7 @@ local unitGrids = {
 		},
 		{
 			{ "armfrad", "armeyes","armfdrag", },             -- floating radar, perimeter camera, shark's teeth
-			{ "", "armdrag", "armasp", "armfasp"},                        	      -- dragon's teeth
+			{ "", "armdrag", "armasp", "armfasp"},            -- dragon's teeth
 		},
 		{
 			{ "armsy", "armvp", "armap", "armlab", },         -- shipyard, veh lab, air lab, bot lab
@@ -1255,7 +1255,7 @@ local unitGrids = {
 
 	corcs = {
 		{
-			{ "cormex", "cortide", },                         -- mex, tidal
+			{ "cormex", "cortide", "", "", "coruwgeo" },      -- mex, tidal, offshore geo
 			{ "corfmkr", "corgeo", },                         -- floating T1 converter, geo
 			{ "coruwes", "coruwms", },                        -- uw e stor, uw m stor
 		},
@@ -1278,9 +1278,9 @@ local unitGrids = {
 	-- Hover cons
 	armch = {
 		{
-			{ "armmex", "armsolar", "armwin", "armadvsol", },  -- mex, solar, wind, adv. solar
-			{ "armmakr", "armgeo", "armamex", "armtide",  },   -- T1 converter, geo, twilight, (tidal)
-			{ "armestor", "armmstor", "armuwes", "armfmkr", }, -- e storage, m storage, (uw e stor), (fl. T1 converter)
+			{ "armmex", "armsolar", "armwin", "armadvsol", "armuwgeo", },  -- mex, solar, wind, adv. solar
+			{ "armmakr", "armgeo", "armamex", "armfmkr", "armtide",  },    -- T1 converter, geo, twilight, (tidal)
+			{ "armestor", "armmstor", "", "armuwes", "armuwms", },         -- e storage, m storage, (uw e stor), (fl. T1 converter)
 		},
 		{
 			{ "armllt", "armbeamer", "armhlt", "armclaw", },  -- LLT, beamer, HLT, lightning turret
@@ -1301,9 +1301,9 @@ local unitGrids = {
 
 	corch = {
 		{
-			{ "cormex", "corsolar", "corwin", "coradvsol", },   -- mex, solar, wind, adv. solar
-			{ "cormakr", "corgeo", "corexp", "cortide", },      -- T1 converter, geo, exploiter, (tidal)
-			{ "corestor", "cormstor", "coruwes", "corfmkr", },  -- e storage, m storage, (uw e stor), (fl. T1 converter)
+			{ "cormex", "corsolar", "corwin", "coradvsol", },           -- mex, solar, wind, adv. solar, offshore geo
+			{ "cormakr", "corgeo", "corexp","corfmkr", "cortide", },    -- T1 converter, geo, exploiter, (fl. T1 converter), (tidal)
+			{ "corestor", "cormstor", "", "coruwes", "coruwms", },      -- e storage, m storage, (uw e stor), (uw m stor)
 		},
 		{
 			{ "corllt", "corhllt", "corhlt", "cormaw", },     -- LLT, Double LLT, HLT, flame turret
@@ -1324,14 +1324,14 @@ local unitGrids = {
 
 	legch = {
 		{
-			{ "legmex", "legsolar", "legwin", "legadvsol", },   -- mex, solar, wind, adv. solar
-			{ "legeconv", "leggeo", "legmext15", "legtide", },              -- T1 converter, geo, T1.5 legion mex, (tidal)
-			{ "legestor", "legmstor", "coruwes", "legfmkr", },  -- e storage, m storage, (uw e stor), (fl. T1 converter)
+			{ "legmex", "legsolar", "legwin", "legadvsol", "leguwgeo", },     -- mex, solar, wind, adv. solar, offshore geo
+			{ "legeconv", "leggeo", "legmext15", "legfeconv", "legtide", },   -- T1 converter, geo, T1.5 legion mex, (fl. T1 converter), (tidal)
+			{ "legestor", "legmstor", "", "leguwestore", "leguwmstore", },    -- e storage, m storage, (uw e stor), (uw m stor)
 		},
 		{
-			{ "leglht", "legmg", "leghive", "legdtr", },     	-- LLT, machine gun, hive, riot turret
+			{ "leglht", "legmg", "leghive", "legdtr", "legfhive",},     	-- LLT, machine gun, hive, riot turret, floating hive
 			{ "legrl", "legrhapsis", "leglupara", "legfrl" },             -- basic AA, rhapsis, t1.5 flak, floating AA
-			{ "legctl", "legcluster", "legtl", "legfmg", },       -- coastal torp launcher, amputator, offshore torp launcher, floating HLT
+			{ "legctl", "legcluster", "legtl", "legfmg", },         -- coastal torp launcher, amputator, offshore torp launcher, floating HLT
 		},
 		{
 			{ "legrad", "legeyes", "legdrag", "legjam", },   -- radar, perimeter camera, dragon's teeth, jammer
@@ -1395,9 +1395,9 @@ local unitGrids = {
 	-- Amphibious vehicle cons
 	armbeaver = {
 		{
-			{ "armmex", "armsolar", "armwin", "armadvsol", },  -- mex, solar, wind, adv. solar
-			{ "armmakr", "armgeo", "armamex", "armtide",  },   -- T1 converter, geo, twilight, (tidal)
-			{ "armestor", "armmstor", "armuwes", "armfmkr", }, -- e storage, m storage, (uw e stor), (fl. T1 converter)
+			{ "armmex", "armsolar", "armwin", "armadvsol", "armuwgeo", },  -- mex, solar, wind, adv. solar, offshore geo
+			{ "armmakr", "armgeo", "armamex", "armfmkr", "armtide",  },    -- T1 converter, geo, twilight, (fl. T1 converter), (tidal)
+			{ "armestor", "armmstor", "", "armuwes", "armuwms", },         -- e storage, m storage, (uw e stor), (uw m stor)
 		},
 		{
 			{ "armllt", "armbeamer", "armhlt", "armclaw", },  -- LLT, beamer, HLT, lightning turret
@@ -1418,9 +1418,9 @@ local unitGrids = {
 
 	cormuskrat = {
 		{
-			{ "cormex", "corsolar", "corwin", "coradvsol", },   -- mex, solar, wind, adv. solar
-			{ "cormakr", "corgeo", "corexp", "cortide", },      -- T1 converter, geo, exploiter, (tidal)
-			{ "corestor", "cormstor", "coruwes", "corfmkr", },  -- e storage, m storage, (uw e stor), (fl. T1 converter)
+			{ "cormex", "corsolar", "corwin", "coradvsol", "coruwgeo", },   -- mex, solar, wind, adv. solar, offshore geo
+			{ "cormakr", "corgeo", "corexp", "corfmkr", "cortide", },                  -- T1 converter, geo, exploiter, (fl. T1 converter), (tidal)
+			{ "corestor", "cormstor", "", "coruwes", "coruwms", },              -- e storage, m storage, (uw e stor), (uw m stor)
 		},
 		{
 			{ "corllt", "corhllt", "corhlt", "cormaw", },     -- LLT, Double LLT, HLT, flame turret
@@ -1441,17 +1441,17 @@ local unitGrids = {
 
     legotter = {
 		{
-			{ "legmex", "legsolar", "legwin", "legadvsol", },   -- mex, solar, wind, adv. solar
-			{ "legeconv", "leggeo", "legmext15", "legtide", },              -- T1 converter, geo, T1.5 legion mex, (tidal)
-			{ "legestor", "legmstor", "coruwes", "legfmkr", },  -- e storage, m storage, (uw e stor), (fl. T1 converter)
+			{ "legmex", "legsolar", "legwin", "legadvsol", "leguwgeo", },    -- mex, solar, wind, adv. solar, offshore geo
+			{ "legeconv", "leggeo", "legmext15", "legfeconv", "legtide", },  -- T1 converter, geo, T1.5 legion mex, (fl. T1 converter), (tidal)
+			{ "legestor", "legmstor", "", "leguwestore", "leguwmstore", },   -- e storage, m storage, (uw e stor), (uw m stor)
 		},
 		{
-			{ "leglht", "legmg", "corhlt", "legdtr", },     -- LLT, machine gun, HLT, flame turret
-			{ "legrl", "legrhapsis", "leglupara", "legfrl" },             -- basic AA, SAM, eradicator, floating AA
-			{ "legctl", "legcluster", "legtl", "legfmg", },       -- coastal torp launcher, punisher, offshore torp launcher, floating HLT
+			{ "leglht", "legmg", "leghive", "legdtr", "legfhive",},     -- LLT, cacophony, hive, riot turret, floating hive
+			{ "legrl", "legrhapsis", "leglupara", "legfrl" },           -- basic AA, rhapsis, lupara, floating AA
+			{ "legctl", "legcluster", "legtl", "legfmg", },             -- coastal torp launcher, amputator, offshore torp launcher, floating cacophony
 		},
 		{
-			{ "legrad", "legeyes", "legdrag", "legjam", },   -- radar, perimeter camera, dragon's teeth, jammer
+			{ "legrad", "legeyes", "legdrag", "legjam", },    -- radar, perimeter camera, dragon's teeth, jammer
 			{ "legfrad", "corfdrag", },                       -- floating radar, shark's teeth
 			{ "corjuno", },                                   -- juno
 		},
@@ -1836,9 +1836,9 @@ local unitGrids = {
 
 	legdecom = {
 		{
-			{ "legmex", "legsolar", "legwin", },               -- mex, solar, wind
-			{ "legeconv", "", "coruwms", "legtide" },           -- T1 converter, uw ms storage, tidal
-			{ "legestor", "legmstor", "coruwes", "legfmkr", }, -- e storage, m storage, uw e storage, floating T1 converter
+			{ "legmex", "legsolar", "legwin", },                        -- mex, solar, wind
+			{ "legeconv", "", "legfeconv", "legtide" },                 -- T1 converter, floating T1 converter, tidal
+			{ "legestor", "legmstor", "leguwestore", "leguwmstore", },  -- e storage, m storage, uw e storage, uw ms storage
 		},
 		{
 			{ "leglht", },                                   -- LLT
