@@ -66,7 +66,7 @@ for uname, ugrid in pairs(unitGrids) do
 		local uncategorizedCount = 0;
 		for cat=1,4 do
 			for row =1,3 do
-				for col =1,4 do
+				for col =1,6 do
 					local unitAtPos = ugrid[cat] and ugrid[cat][row] and ugrid[cat][row][col]
 
 					if unitAtPos then
@@ -191,6 +191,11 @@ end
 -- 9  10 11 12
 -- 5  6  7  8
 -- 1  2  3  4
+
+-- expanded grid indices are laid out like this
+-- 13 14 15 16 17 18
+-- 7  8  9  10 11 12
+-- 1  2  3  4  5  6
 
 function homeOptionsForBuilder(builderId, buildOptions)
 	local options = {}
