@@ -9,10 +9,11 @@ This widget is to help alleviate the 2nd page unit syndrome, where units get for
 ![armt2botlab3x6menu](https://github.com/user-attachments/assets/81194621-93ee-483b-8268-36435c8f8421)
 
 # Features
-- Expands the Grid menu panel from 3x4 to 3x6 panel to allow an extra 6 slot visibility in grid menu.
+Expands the Grid menu panel from 3x4 to 3x6 panel to allow an extra 6 slot visibility in grid menu.
 
 # Known Issue
-You will have to delete/move `gui_gridmenu.lua` out of the Widgets folder to go back to old `3x4 Grid menu panel.`  Until myself or someone else is able figure out to make it toggleable to switch between 3x4 & 3x6 Grid menus panels.
+- You will have to delete/move `gui_gridmenu.lua` out of the `Widgets` folder,
+- Also delete/move `gridmenu_layout.lua` & `gridmenu_config.lua` out of the `Configs` folder, to go back to `3x4 Grid menu panel.`
 
 # Installation Guide
 1. Download [Gridmenu_config.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/Expanded_Gridmenu/Configs/gridmenu_config.lua), [Gridmenu_layout.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/Expanded_Gridmenu/Configs/gridmenu_layouts.lua), [Gui_gridmenu.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/Expanded_Gridmenu/Widgets/gui_gridmenu.lua) and [uikeys.txt](https://github.com/DMikey86/BAR-Widgets/blob/main/Expended_Girdmenu/uikeys.txt) files.
@@ -34,6 +35,9 @@ You will have to delete/move `gui_gridmenu.lua` out of the Widgets folder to go 
 6. Toggle `Use Gridmenu`
 7. Toggle `Factory build mode hotkeys`
 8. You can now play with the new Expanded Gridmenu.
+
+> [!NOTE] 
+> You can adjust size via the in-game setting under `Interface tab` by adjusting the `Interface Scale`
 
 # Hotkey Setup image
 ![Control_Hotkeys](https://github.com/user-attachments/assets/94ecac7c-6479-41e0-8f0c-f1de8f30c59a)
