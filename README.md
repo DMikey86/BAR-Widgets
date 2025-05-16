@@ -15,7 +15,7 @@ This widget is to help alleviate the 2nd page unit syndrome, where units get for
 You will have to delete/move `gui_gridmenu.lua` out of the Widgets folder to go back to old `3x4 Grid menu panel.`  Until myself or someone else is able figure out to make it toggleable to switch between 3x4 & 3x6 Grid menus panels.
 
 # Installation Guide
-1. Download [Gridmenu_config.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/gridmenu_config.lua), [Gridmenu_layout.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/gridmenu_layouts.lua), [Gui_gridmenu.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/gui_gridmenu.lua) and [uikeys.txt](https://github.com/DMikey86/BAR-Widgets/blob/main/uikeys.txt) files.
+1. Download [Gridmenu_config.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/Expanded_Gridmenu/LuaUI/Configs/gridmenu_config.lua), [Gridmenu_layout.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/Expanded_Gridmenu/LuaUI/Configs/gridmenu_layouts.lua), [Gui_gridmenu.lua](https://github.com/DMikey86/BAR-Widgets/blob/main/Expanded_Gridmenu/LuaUI/Widgets/gui_gridmenu.lua) and [uikeys.txt](https://github.com/DMikey86/BAR-Widgets/blob/main/Expended_Girdmenu/uikeys.txt) files.
 2. Create another folder inside <ins>**LuaUI**</ins> folder call `Configs` image below for context.
 3. Paste `gridmenu_config.lua` & `gridmenu_layout.lua` into your `/Beyond-All-Reason/data/LuaUI/Configs/` folder
 4. Paste `gui_gridmenu.lua` inside your `/Beyond-All-Reason/data/LuaUI/Widgets/` folder
