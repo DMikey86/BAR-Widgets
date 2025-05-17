@@ -1216,7 +1216,7 @@ local unitGrids = {
 			{ "legctl", "legcluster", },                           -- coastal torp launcher, punisher
 		},
 		{
-			{ "legrad", "legeyes", "legdrag", "legjam", },   -- radar, perimeter camera, dragon's teeth, jammer
+			{ "legrad", "legeyes", "legdrag", "legjam", },    -- radar, perimeter camera, dragon's teeth, jammer
 			{ "", "", "corasp", "corfasp" },                  -- air repair pad, floating air repair pad
 			{ "legjuno", },                                   -- juno
 		},
@@ -1330,7 +1330,7 @@ local unitGrids = {
 			{ "legctl", "legcluster", "legtl", "legfmg", },         -- coastal torp launcher, amputator, offshore torp launcher, floating HLT
 		},
 		{
-			{ "legrad", "legeyes", "legdrag", "legjam", },   -- radar, perimeter camera, dragon's teeth, jammer
+			{ "legrad", "legeyes", "legdrag", "legjam", },    -- radar, perimeter camera, dragon's teeth, jammer
 			{ "legfrad", "legfdrag", },                       -- floating radar, shark's teeth
 			{ "legjuno", },                                   -- juno
 		},
@@ -1435,7 +1435,7 @@ local unitGrids = {
 		}
 	},
 
-    legotter = {
+	legotter = {
 		{
 			{ "legmex", "legsolar", "legwin", "legadvsol", "leguwgeo", },    -- mex, solar, wind, adv. solar, offshore geo
 			{ "legeconv", "leggeo", "legmext15", "legfeconv", "legtide", },  -- T1 converter, geo, T1.5 legion mex, (fl. T1 converter), (tidal)
