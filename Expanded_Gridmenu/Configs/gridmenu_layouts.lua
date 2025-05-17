@@ -13,9 +13,9 @@ local labGrids = {
 	},
 
 	leglab = {
-		"legck", "cornecro", "leggob", "", "", "",                -- T1 con, rez bot, goblin
+		"legck", "legrezbot", "leggob", "", "", "",               -- T1 con, rez bot, goblin
 		"legbal", "leglob", "legkark", "legcen", "", "",          -- ballista, lobber, karkinos, centaur
-		"", "", "corcrash",                                       -- aa bot
+		"", "", "legaabot",                                       -- aa bot
 	},
 	-- T2 bot
 	armalab = {
@@ -151,10 +151,10 @@ local labGrids = {
 		"", "corcrash", "coraak",                              -- t1 AA bot, t2 AA bot
 	},
 
-	legamsub = {
+	legamphlab = {
 		"legotter", "legdecom", "legamphtank", "", "", "",	   -- amphibious con, decoy com, t1 amphibious tank
 		"","legfloat", "legamph", "",                          -- t2 floating tank, t2 amph bot
-		"", "corcrash", "coraak", "",                          -- t1 aa bot, t2 aa bot
+		"", "legaabot", "coraak", "",                          -- t1 aa bot, t2 aa bot
 	},
 	-- hover labs
 	armhp = {
@@ -269,12 +269,8 @@ local unitGrids = {
 	legassistdrone = {
 		{
 			{ "legmex", "legsolar", "legwin", },                -- mex, solar, wind
-			{ "cormakr", "", "coruwms", "legtide"},             -- T1.5 mex, uw m storage, tidal
-			{ "corestor", "cormstor", "coruwes", "legfmkr",  }, -- e storage, m sotrage, uw e storage, floating converter
-			{ "legeconv", "", "coruwms", "legtide"},             -- T1.5 mex, uw m storage, tidal
-			{ "legestor", "legmstor", "coruwes", "legfmkr",  }, -- e storage, m sotrage, uw e storage, floating converter
-			{ "legeconv", "", "coruwms", "legtide"},             -- T1.5 mex, uw m storage, tidal
-			{ "corestor", "legmstor", "coruwes", "legfmkr",  }, -- e storage, m sotrage, uw e storage, floating converter
+			{ "legeconv", "", "leguwmstore", "legtide"},             -- T1 converter, uw m storage, tidal
+			{ "legestor", "legmstor", "leguwestore", "legfeconv",  }, -- e storage, m sotrage, uw e storage, floating converter
 		},
 		{
 			{ "leglht", "legtl", },                          -- LLT, offshore torp launcher
@@ -283,7 +279,7 @@ local unitGrids = {
 		},
 		{
 			{ "legrad", "legeyes", "legdrag", },             -- radar, perimeter camera, dragon's teeth
-			{ "legfrad", "corfdrag", },                      -- floating radar, shark's teeth
+			{ "legfrad", "legfdrag", },                      -- floating radar, shark's teeth
 			{ },                                             -- empty
 		},
 		{
@@ -340,18 +336,18 @@ local unitGrids = {
 	},
 	legassistdrone_land = {
 		{
-			{ "legmex", "legsolar", "legwin", },                -- mex, solar, wind
-			{ "cormakr", "", "coruwms", "legtide"},             -- T1.5 mex, uw m storage, tidal
-			{ "legestor", "cormstor", "coruwes", "legfmkr",  }, -- e storage, m sotrage, uw e storage, floating converter
+			{ "legmex", "legsolar", "legwin", },                      -- mex, solar, wind
+			{ "legeconv", "", "leguwmstore", "legtide"},              -- T1.5 mex, uw m storage, tidal
+			{ "legestor", "legmstor", "leguwestore", "legfeconv",  }, -- e storage, m sotrage, uw e storage, floating converter
 		},
 		{
-			{ "corllt", "legtl", },                          -- LLT, offshore torp launcher
-			{ "corrl", "legfrl", },                          -- basic AA, floating AA
-			{ "legctl", },                                    -- coastal torp launcher
+			{ "leglht", "legtl", },                          -- LHT, offshore torp launcher
+			{ "legrl", "legfrl", },                          -- basic AA, floating AA
+			{ "legctl", },                                   -- coastal torp launcher
 		},
 		{
-			{ "corrad", "coreyes", "cordrag", },             -- radar, perimeter camera, dragon's teeth
-			{ "legfrad", "corfdrag", },                      -- floating radar, shark's teeth
+			{ "legrad", "legeyes", "legdrag", },             -- radar, perimeter camera, dragon's teeth
+			{ "legfrad", "legfdrag", },                      -- floating radar, shark's teeth
 			{ },                                             -- empty
 		},
 		{
@@ -818,7 +814,7 @@ local unitGrids = {
 		},
 		{
 			{ "legrad", "legeyes", "legdrag", },             -- radar, perimeter camera, dragon's teeth
-			{ "legfrad", "corfdrag", },                      -- floating radar, shark's teeth
+			{ "legfrad", "legfdrag", },                      -- floating radar, shark's teeth
 			{ },                                             -- empty
 		},
 		{
@@ -862,8 +858,8 @@ local unitGrids = {
 		},
 		{
 			{ "legavrad", "legeyes", "legdrag", "legavjam", },      -- radar bot, perimeter camera, dragon's teeth, jammer bot
-			{ "legfrad", "corfdrag",},                              -- floating radar, shark's teeth
-			{ "corjuno", "legrad", "legstronghold"},                -- juno, radar, t2 transport
+			{ "legfrad", "legfdrag",},                              -- floating radar, shark's teeth
+			{ "legjuno", "legrad", "legstronghold"},                -- juno, radar, t2 transport
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },        -- bot lab, veh lab, air lab, shipyard
@@ -884,8 +880,8 @@ local unitGrids = {
 		},
 		{
 			{ "legavrad", "legeyes", "legforti", "legavjam", },    -- radar bot, perimeter camera, t2 wall, jammer bot
-			{ "legfrad", "corfdrag", "legdrag", "corasp"},         -- floating radar, sharks teeth, dragons teeth, air repair pad
-			{ "corjuno", "legarad", "legstronghold"},              -- juno, radar, t2 transport
+			{ "legfrad", "legfdrag", "legdrag", "corasp"},         -- floating radar, sharks teeth, dragons teeth, air repair pad
+			{ "legjuno", "legarad", "legstronghold"},              -- juno, radar, t2 transport
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },        -- bot lab, veh lab, air lab, shipyard
@@ -906,8 +902,8 @@ local unitGrids = {
 		},
 		{
 			{ "legavrad", "legeyes", "legforti", "legavjam", },    -- radar bot, perimeter camera, t2 wall, jammer bot
-			{ "legfrad", "corfdrag", "legdrag", "corasp"},         -- floating radar, sharks teeth, dragons teeth, air repair pad
-			{ "corjuno", "legarad", "legstronghold"},              -- juno, radar, t2 transport
+			{ "legfrad", "legfdrag", "legdrag", "corasp"},         -- floating radar, sharks teeth, dragons teeth, air repair pad
+			{ "legjuno", "legarad", "legstronghold"},              -- juno, radar, t2 transport
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },        -- bot lab, veh lab, air lab, shipyard
@@ -928,8 +924,8 @@ local unitGrids = {
 		},
 		{
 			{ "legavrad", "legeyes", "legforti", "legajam", },      -- radar bot, perimeter camera, t2 wall, jammer bot
-			{ "legfrad", "corfdrag", "legdrag", "corasp"},          -- floating radar, sharks teeth, dragons teeth, air repair pad
-			{ "corjuno", "legarad", "legstronghold"},               -- juno, radar, t2 transport
+			{ "legfrad", "legfdrag", "legdrag", "corasp"},          -- floating radar, sharks teeth, dragons teeth, air repair pad
+			{ "legjuno", "legarad", "legstronghold"},               -- juno, radar, t2 transport
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },        -- bot lab, veh lab, air lab, shipyard
@@ -950,8 +946,8 @@ local unitGrids = {
 		},
 		{
 			{ "legavrad", "legeyes", "legforti", "legavjam", },  -- radar bot, perimeter camera, t2 wall, jammer bot
-			{ "legfrad", "corfdrag", "legdrag", "corasp"},       -- floating radar, sharks teeth, dragons teeth, air repair pad
-			{ "corjuno", "legarad", "legstronghold"},            -- juno, radar, t2 transport
+			{ "legfrad", "legfdrag", "legdrag", "corasp"},       -- floating radar, sharks teeth, dragons teeth, air repair pad
+			{ "legjuno", "legarad", "legstronghold"},            -- juno, radar, t2 transport
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },        -- bot lab, veh lab, air lab, shipyard
@@ -972,8 +968,8 @@ local unitGrids = {
 		},
 		{
 			{ "legavrad", "legeyes", "legforti", "legavjam", "legdeflector", },      -- radar bot, perimeter camera, t2 wall, jammer bot, plasma shield
-			{ "legfrad", "corfdrag", "legdrag", "corasp"},                           -- floating radar, sharks teeth, dragons teeth, air repair pad
-			{ "corjuno", "legarad", "legstronghold"},                                -- juno, radar, t2 transport
+			{ "legfrad", "legfdrag", "legdrag", "corasp"},                           -- floating radar, sharks teeth, dragons teeth, air repair pad
+			{ "legjuno", "legarad", "legstronghold"},                                -- juno, radar, t2 transport
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },        -- bot lab, veh lab, air lab, shipyard
@@ -994,8 +990,8 @@ local unitGrids = {
 		},
 		{
 			{ "legavrad", "legeyes", "legforti", "legavjam", "legdeflector",},              -- radar bot, perimeter camera, t2 wall, jammer bot, plasma shield
-			{ "legfrad", "corfdrag", "legdrag", "corasp"},                                  -- floating radar, sharks teeth, dragons teeth, air repair pad
-			{ "corjuno", "legarad", "legstronghold"},                                       -- juno, radar, t2 transport
+			{ "legfrad", "legfdrag", "legdrag", "corasp"},                                  -- floating radar, sharks teeth, dragons teeth, air repair pad
+			{ "legjuno", "legarad", "legstronghold"},                                       -- juno, radar, t2 transport
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },        -- bot lab, veh lab, air lab, shipyard
@@ -1016,8 +1012,8 @@ local unitGrids = {
 		},
 		{
 			{ "legavrad", "legeyes", "legforti", "legavjam", "legdeflector",},              -- radar bot, perimeter camera, t2 wall, jammer bot, plasma shield
-			{ "legfrad", "corfdrag", "legdrag", "corasp"},                                  -- floating radar, sharks teeth, dragons teeth, air repair pad
-			{ "corjuno", "legarad", "legstronghold"},                                       -- juno, radar, t2 transport
+			{ "legfrad", "legfdrag", "legdrag", "corasp"},                                  -- floating radar, sharks teeth, dragons teeth, air repair pad
+			{ "legjuno", "legarad", "legstronghold"},                                       -- juno, radar, t2 transport
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },        -- bot lab, veh lab, air lab, shipyard
@@ -1085,7 +1081,7 @@ local unitGrids = {
 		{
 			{ "legrad", "legeyes", "legdrag", "legjam", },   -- radar, perimeter camera, dragon's teeth, jammer
 			{ "", "", "corasp", "corfasp" },                  -- air repair pad, floating air repair pad
-			{ "corjuno", },                                   -- juno
+			{ "legjuno", },                                   -- juno
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },         -- bot lab, veh lab, air lab, shipyard
@@ -1154,7 +1150,7 @@ local unitGrids = {
 		{
 			{ "legrad", "legeyes", "legdrag", "legjam", },   -- radar, perimeter camera, dragon's teeth, jammer
 			{ "", "", "corasp", "corfasp" },                  -- air repair pad, floating air repair pad
-			{ "corjuno", },                                   -- juno
+			{ "legjuno", },                                   -- juno
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },         -- bot lab, veh lab, air lab, shipyard
@@ -1222,7 +1218,7 @@ local unitGrids = {
 		{
 			{ "legrad", "legeyes", "legdrag", "legjam", },   -- radar, perimeter camera, dragon's teeth, jammer
 			{ "", "", "corasp", "corfasp" },                  -- air repair pad, floating air repair pad
-			{ "corjuno", },                                   -- juno
+			{ "legjuno", },                                   -- juno
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },         -- bot lab, veh lab, air lab, shipyard
@@ -1335,8 +1331,8 @@ local unitGrids = {
 		},
 		{
 			{ "legrad", "legeyes", "legdrag", "legjam", },   -- radar, perimeter camera, dragon's teeth, jammer
-			{ "legfrad", "corfdrag", },                       -- floating radar, shark's teeth
-			{ "corjuno", },                                   -- juno
+			{ "legfrad", "legfdrag", },                       -- floating radar, shark's teeth
+			{ "legjuno", },                                   -- juno
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },         -- bot lab, veh lab, air lab, shipyard
@@ -1452,8 +1448,8 @@ local unitGrids = {
 		},
 		{
 			{ "legrad", "legeyes", "legdrag", "legjam", },    -- radar, perimeter camera, dragon's teeth, jammer
-			{ "legfrad", "corfdrag", },                       -- floating radar, shark's teeth
-			{ "corjuno", },                                   -- juno
+			{ "legfrad", "legfdrag", },                       -- floating radar, shark's teeth
+			{ "legjuno", },                                   -- juno
 		},
 		{
 			{ "leglab", "legvp", "legap", "corsy", },         -- bot lab, veh lab, air lab, shipyard
@@ -1512,18 +1508,18 @@ local unitGrids = {
 	legack = {
 		{
 			{ "legmoho", "legfus", "legafus", },                -- moho, fusion, afus
-			{ "legadveconv", "legageo", "cormexp", },               -- T2 converter, T2 geo, armed moho
-			{ "legadvestore", "legamstor", },                    -- hardened energy storage, hardened metal storage,
+			{ "legadveconv", "legageo", "cormexp", },           -- T2 converter, T2 geo, armed moho
+			{ "legadvestore", "legamstor", },                   -- hardened energy storage, hardened metal storage,
 		},
 		{
-			{ "legbombard", "legbastion", "legacluster", "legperdition", },   -- pop-up gauss, heavy defence, pop-up artillery, tac nuke
-			{ "legflak", "leglraa", "legabm", "legrampart", }, -- flak, long-range AA, anti-nuke, cerberus
-			{ "leglrpc", "legstarfall", "legsilo", },                -- LRPC, ICBM, lolcannon
+			{ "legbombard", "legbastion", "legacluster", "legperdition", },  -- pop-up turret, heavy defence, pop-up artillery, napalm missile
+			{ "legflak", "leglraa", "legabm", "legrampart", },               -- flak, long-range AA, anti-nuke, rampart
+			{ "leglrpc", "legstarfall", "legsilo", },                        -- LRPC, lolcannon, ICBM
 		},
 		{
-			{ "legarad", "legtarg", "legforti", "legajam", },  -- adv radar, targeting facility, wall, adv jammer
-			{ "legsd", "", "corasp", },               -- intrusion counter, air repair pad, floating air repair pad
-			{ "legdeflector", },                                     -- anti-nuke, shield
+			{ "legarad", "legtarg", "legforti", "legajam", },                -- adv radar, targeting facility, wall, adv jammer
+			{ "legsd", "", "corasp", },                                      -- intrusion counter, air repair pad, floating air repair pad
+			{ "legdeflector", },                                             -- shield
 		},
 		{
 			{ "leglab", },                                       -- T1 lab,
@@ -1582,22 +1578,22 @@ local unitGrids = {
 	legacv = {
 		{
 			{ "legmoho", "legfus", "legafus", },                -- moho, fusion, afus
-			{ "legadveconv", "legageo", "cormexp", },               -- T2 converter, T2 geo, armed moho
-			{ "legadvestore", "legamstor", },                    -- hardened energy storage, hardened metal storage,
+			{ "legadveconv", "legageo", "cormexp", },           -- T2 converter, T2 geo, armed moho
+			{ "legadvestore", "legamstor", },                   -- hardened energy storage, hardened metal storage,
 		},
 		{
-			{ "legbombard", "legbastion", "legacluster", "legperdition", },   -- pop-up gauss, heavy defence, pop-up artillery, tac nuke
-			{ "legflak", "leglraa", "legabm", "legrampart", }, -- flak, long-range AA, anti-nuke, cerberus
-			{ "leglrpc", "legstarfall", "legsilo", },                -- LRPC, ICBM, lolcannon
+			{ "legbombard", "legbastion", "legacluster", "legperdition", },  -- pop-up turret, heavy defence, pop-up artillery, napalm missile
+			{ "legflak", "leglraa", "legabm", "legrampart", },               -- flak, long-range AA, anti-nuke, rampart
+			{ "leglrpc", "legstarfall", "legsilo", },                        -- LRPC, lolcannon, ICBM
 		},
 		{
-			{ "legarad", "legtarg", "legforti", "legajam", },  -- adv radar, targeting facility, wall, adv jammer
-			{ "legsd", "", "corasp", },               -- intrusion counter, air repair pad, floating air repair pad
-			{ "legdeflector", },                                     -- anti-nuke, shield
+			{ "legarad", "legtarg", "legforti", "legajam", },                -- adv radar, targeting facility, wall, adv jammer
+			{ "legsd", "", "corasp", },                                      -- intrusion counter, air repair pad, floating air repair pad
+			{ "legdeflector", },                                             -- shield
 		},
 		{
-			{ "legvp", },                                       -- T1 lab,
-			{ "leggant", "legavp", },                           -- T3 lab, T2 lab
+			{ "leglab", },                                       -- T1 lab,
+			{ "leggant", "legalab", },                           -- T3 lab, T2 lab
 			{ },                                     -- seaplane lab (aircon only)
 		}
 	},
@@ -1651,26 +1647,25 @@ local unitGrids = {
 	legaca = {
 		{
 			{ "legmoho", "legfus", "legafus", },                -- moho, fusion, afus
-			{ "legadveconv", "legageo", "cormexp","coruwageo", },               -- T2 converter, T2 geo, armed moho
-			{ "legadvestore", "legamstor", },                    -- hardened energy storage, hardened metal storage,
+			{ "legadveconv", "legageo", "cormexp", },           -- T2 converter, T2 geo, armed moho
+			{ "legadvestore", "legamstor", },                   -- hardened energy storage, hardened metal storage,
 		},
 		{
-			{ "legbombard", "legbastion", "legacluster", "legperdition", },   -- pop-up gauss, heavy defence, pop-up artillery, tac nuke
-			{ "legflak", "leglraa", "legabm", "legrampart", }, -- flak, long-range AA, anti-nuke, cerberus
-			{ "leglrpc", "legstarfall", "legsilo", },                -- LRPC, ICBM, lolcannon
+			{ "legbombard", "legbastion", "legacluster", "legperdition", },  -- pop-up turret, heavy defence, pop-up artillery, napalm missile
+			{ "legflak", "leglraa", "legabm", "legrampart", },               -- flak, long-range AA, anti-nuke, rampart
+			{ "leglrpc", "legstarfall", "legsilo", },                        -- LRPC, lolcannon, ICBM
 		},
 		{
-			{ "legarad", "legtarg", "legforti", "legajam", },  -- adv radar, targeting facility, wall, adv jammer
-			{ "legsd", "", "corasp", "corfasp" },               -- intrusion counter, air repair pad, floating air repair pad
-			{ "legdeflector", },                                     -- anti-nuke, shield
+			{ "legarad", "legtarg", "legforti", "legajam", },                -- adv radar, targeting facility, wall, adv jammer
+			{ "legsd", "", "corasp", "corfasp", },                           -- intrusion counter, air repair pad, floating air repair pad
+			{ "legdeflector", },                                             -- shield
 		},
 		{
-			{ "legap", },                                       -- T1 lab,
-			{ "leggant", "legaap", },                           -- T3 lab, T2 lab
-			{ "corplat", },                                     -- seaplane lab (aircon only)
+			{ "leglab", },                                       -- T1 lab,
+			{ "leggant", "legalab", },                           -- T3 lab, T2 lab
+			{ "corplat", },                                      -- seaplane lab (aircon only)
 		}
 	},
-
 	--T2 sub cons
 	armacsub = {
 		{
@@ -1857,7 +1852,7 @@ local unitGrids = {
 		}
 	},
 
-	--fark
+	-- butler
 	armfark = {
 		{
 			{ "armmex", "armsolar", "armwin", },   -- mex, solar, wind
@@ -1881,7 +1876,7 @@ local unitGrids = {
 		}
 	},
 
-	--freaker
+	-- twitcher
 	corfast = {
 		{
 			{ "cormex", "corsolar", },                                -- mex, solar
@@ -1905,7 +1900,7 @@ local unitGrids = {
 		}
 	},
 
-	--proteus
+	-- proteus
 	legaceb = {
 		{
 			{ "legmex", "legsolar", },                                -- 0.5 mex, solar
@@ -1913,43 +1908,43 @@ local unitGrids = {
 			{ },                                                      --
 		},
 		{
-			{ "legdtr", "legstr", "legacluster", },               -- dragon's jaw, strider, t2 cluster arty
-			{ "legflak", "legrhapsis", "corcrash", "leggob", },    -- Ravager Flak, Rhapsis, T1 aa bot, Goblin
-			{ "legctl", "legfloat", },               				-- coastal torp launcher, triton
+			{ "legdtr", "legstr", "legacluster", },                  -- dragon's jaw, strider, t2 cluster arty
+			{ "legflak", "legrhapsis", "legaabot", "leggob", },      -- Ravager Flak, Rhapsis, T1 aa bot, Goblin
+			{ "legctl", "legfloat", },               				 -- coastal torp launcher, triton
 		},
 		{
-			{ "legarad", "coreyes", "legforti", "legajam", },        -- adv radar, camera, wall, adv jammer
-			{ },                                                      --
-			{ },                                          			  -- med mine
+			{ "legarad", "legeyes", "legforti", "legajam", },        -- adv radar, camera, wall, adv jammer
+			{ },                                                     --
+			{ },                                          			 -- med mine
 		},
 		{
-			{ "leglab", "legck", },                                   -- bot lab, bot con
-			{ "legnanotc", "legch", },                                -- nano, hover con (for now)
-			{ },                                      				  --
+			{ "leglab", "legck", },                                  -- bot lab, bot con
+			{ "legnanotc", "legch", },                               -- nano, hover con (for now)
+			{ },                                      				 --
 		}
 	},
 
-	--aceso
+	-- aceso
     legafcv = {
 		{
 			{ "legmex", "legsolar", "legwin", "legadvsol", },   -- mex, solar, wind, adv. solar
-			{ "legeconv", "leggeo", "legmext15", },              -- T1 converter, geo, T1.5 legion mex, (tidal)
+			{ "legeconv", "leggeo", "legmext15", },             -- T1 converter, geo, T1.5 legion mex, (tidal)
 			{ "legestor", "legmstor", },                        -- e storage, m storage, (uw e stor), (fl. T1 converter)
 		},
 		{
-			{ "leglht", "legmg", "", "legdtr", },     			-- LLT, machine gun, HLT, flame turret
-			{ "legrl", "legrhapsis", "leglupara", },             -- basic AA, SAM, eradicator
-			{ "legctl", "legcluster", },                           -- coastal torp launcher, punisher
+			{ "leglht", "legmg", "", "legdtr", },     			-- LHT, machine gun, HLT, flame turret
+			{ "legrl", "legrhapsis", "leglupara", },            -- basic AA, SAM, eradicator
+			{ "legctl", "legcluster", },                        -- coastal torp launcher, punisher
 		},
 		{
-			{ "legrad", "legeyes", "legdrag", "legjam", },   -- radar, perimeter camera, dragon's teeth, jammer
-			{ "", "", "corasp", "corfasp" },                  -- air repair pad, floating air repair pad
-			{ "corjuno", },                                   -- juno
+			{ "legrad", "legeyes", "legdrag", "legjam", },      -- radar, perimeter camera, dragon's teeth, jammer
+			{ "", "", "corasp", "corfasp" },                    -- air repair pad, floating air repair pad
+			{ "legjuno", },                                     -- juno
 		},
 		{
-			{ "leglab", "legvp", "legap", "corsy", },         -- bot lab, veh lab, air lab, shipyard
-			{ "legnanotc", "coralab", },                      -- nano, T2 lab
-			{ "leghp", },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
+			{ "leglab", "legvp", "legap", "corsy", },           -- bot lab, veh lab, air lab, shipyard
+			{ "legnanotc", "legalab", },                        -- nano, T2 lab
+			{ "leghp", },                                       -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	},
 
