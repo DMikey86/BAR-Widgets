@@ -32,8 +32,8 @@ local labGrids = {
 
 	legalab = {
 		"legack", "legaceb", "legstr", "corspy", "legdecom", "leginfestor",          -- T2 con, proteus, hoplite, spy, decoycom, infestor
-		"corvoyr", "corspec", "legshot", "leghrk", "corsktl", "",                    -- radar bot, jammer bot, phanlax, thantos, skuttle
-		"legbart", "legsrail", "coraak", "leginc", "legamph", "legsnapper",          -- belcher, railgun, AA bot, incinerator, telchine, snapper
+		"corvoyr", "corspec", "legshot", "leghrk", "", "",                    -- radar bot, jammer bot, phanlax, thantos
+		"legbart", "legsrail", "legadvaabot", "leginc", "legamph", "legsnapper",     -- belcher, railgun, AA bot, incinerator, telchine, snapper
     
 	},
 	-- T1 vehicle
@@ -100,7 +100,7 @@ local labGrids = {
 	},
 
 	legaap = {
-		"legaca", "legionnaire", "legvenator", "legphoenix", "", "",     -- T2 con, defensive fig, interceptor, phoenix
+		"legaca", "legafigdef", "legvenator", "legphoenix", "", "",     -- T2 con, defensive fig, interceptor, phoenix
 		"legwhisper", "legstronghold", "legatorpbomber", "", "", "",     -- radar, transport(gunship), torpedo,
 		"legfort", "legnap", "legmineb", ""	                             -- flying fort, napalmbomber, minebomber
 	},
@@ -1512,9 +1512,9 @@ local unitGrids = {
 			{ "legadvestore", "legamstor", },                   -- hardened energy storage, hardened metal storage,
 		},
 		{
-			{ "legbombard", "legbastion", "legacluster", "legperdition", },  -- pop-up turret, heavy defence, pop-up artillery, napalm missile
-			{ "legflak", "leglraa", "legabm", "legrampart", },               -- flak, long-range AA, anti-nuke, rampart
-			{ "leglrpc", "legstarfall", "legsilo", },                        -- LRPC, lolcannon, ICBM
+			{ "legapopupdef", "legbastion", "legacluster", "legperdition", },  -- pop-up turret, heavy defence, pop-up artillery, napalm missile
+			{ "legflak", "leglraa", "legabm", "legrampart", },                 -- flak, long-range AA, anti-nuke, rampart
+			{ "leglrpc", "legstarfall", "legsilo", },                          -- LRPC, lolcannon, ICBM
 		},
 		{
 			{ "legarad", "legtarg", "legforti", "legajam", },                -- adv radar, targeting facility, wall, adv jammer
@@ -1582,7 +1582,7 @@ local unitGrids = {
 			{ "legadvestore", "legamstor", },                   -- hardened energy storage, hardened metal storage,
 		},
 		{
-			{ "legbombard", "legbastion", "legacluster", "legperdition", },  -- pop-up turret, heavy defence, pop-up artillery, napalm missile
+			{ "legapopupdef", "legbastion", "legacluster", "legperdition", },  -- pop-up turret, heavy defence, pop-up artillery, napalm missile
 			{ "legflak", "leglraa", "legabm", "legrampart", },               -- flak, long-range AA, anti-nuke, rampart
 			{ "leglrpc", "legstarfall", "legsilo", },                        -- LRPC, lolcannon, ICBM
 		},
@@ -1651,7 +1651,7 @@ local unitGrids = {
 			{ "legadvestore", "legamstor", },                   -- hardened energy storage, hardened metal storage,
 		},
 		{
-			{ "legbombard", "legbastion", "legacluster", "legperdition", },  -- pop-up turret, heavy defence, pop-up artillery, napalm missile
+			{ "legapopupdef", "legbastion", "legacluster", "legperdition", },  -- pop-up turret, heavy defence, pop-up artillery, napalm missile
 			{ "legflak", "leglraa", "legabm", "legrampart", },               -- flak, long-range AA, anti-nuke, rampart
 			{ "leglrpc", "legstarfall", "legsilo", },                        -- LRPC, lolcannon, ICBM
 		},
