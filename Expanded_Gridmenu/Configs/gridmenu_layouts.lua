@@ -32,7 +32,7 @@ local labGrids = {
 
 	legalab = {
 		"legack", "legaceb", "legstr", "corspy", "legdecom", "leginfestor",          -- T2 con, proteus, hoplite, spy, decoycom, infestor
-		"corvoyr", "corspec", "legshot", "leghrk", "", "",                    -- radar bot, jammer bot, phanlax, thantos
+		"corvoyr", "corspec", "legshot", "leghrk", "", "",                           -- radar bot, jammer bot, phanlax, thanatos
 		"legbart", "legsrail", "legadvaabot", "leginc", "legamph", "legsnapper",     -- belcher, railgun, AA bot, incinerator, telchine, snapper
     
 	},
@@ -45,32 +45,32 @@ local labGrids = {
 
 	corvp = {
 		"corcv", "cormlv", "corgator", "corfav", "", "",       -- T1 con, minelayer, gator, scout
-		"corraid", "corlevlr", "corwolv", "", "", "",          -- raider, leveler, art
+		"corraid", "corlevlr", "corwolv", "", "", "",          -- raider, leveler, arty
 		"cormuskrat", "corgarp", "cormist", "",                -- amphib con, amphib tank, missile truck
 	},
 
 	legvp = {
-		"legcv", "legmlv", "leghades", "legscout", "", "",     -- T1 con, minelayer, gator, scout
-		"leghelios", "leggat", "legbar", "", "", "",           -- raider, leveler, art
-		"legotter", "legamphtank", "legrail", "",              -- amphib con, amphib tank, missile truck
+		"legcv", "legmlv", "leghades", "legscout", "", "",     -- T1 con, minelayer, alaris, scout
+		"leghelios", "leggat", "legbar", "", "", "",           -- helios, decurion, napalm arty
+		"legotter", "legamphtank", "legrail", "",              -- amphib con, amphib tank, railgun truck
 	},
 	-- T2 vehicle
 	armavp = {
 		"armacv", "armconsul", "armbull", "armmart", "", "",                             -- T2 con, consul, bulldog, luger
-		"armseer", "armjam", "armmanni", "armgremlin", "", "",                           -- radar, jammer, penetrator, gremlin
-		"armlatnk", "armcroc", "armyork", "armmerl", "", "",                             -- panther, triton, AA, merl 
+		"armseer", "armjam", "armmanni", "armgremlin", "", "",                           -- radar, jammer, starlight, gremlin
+		"armlatnk", "armcroc", "armyork", "armmerl", "", "",                             -- jaguar, turtle, AA vehicle, merl 
 	},
 
 	coravp = {
 		"coracv", "corban", "correap", "cormart", "cormabm", "",                         -- T2 con, banisher, reaper, pillager, mobile AN
-		"corvrad", "coreter", "corgol", "cortrem", "", "",                               -- radar, jammer, goli, tremor
-		"corsala", "corparrow", "corsent", "corvroc", "", "",                            -- salamander, poison arrow, AA, diplomat
+		"corvrad", "coreter", "corgol", "cortrem", "", "",                               -- radar, jammer, tzar, tremor
+		"corsala", "corparrow", "corsent", "corvroc", "", "",                            -- salamander, poison arrow, AA vehicle, diplomat
 	},
 
 	legavp = {
 		"legacv", "legafcv", "legaskirmtank", "legamcluster", "legvcarry", "legmed",     -- T2 con, aceso, gladiator, cleaver, mantis, medusa
 		"legavrad", "legavjam", "legaheattank", "leginf", "cormabm", "",                 -- radar, jammer, prometheus, inferno, mobile AN
-		"legmrv", "legfloat", "legvflak", "legavroc", "", "",                             -- Quickshot, new triton, AA, boreas
+		"legmrv", "legfloat", "legvflak", "legavroc", "", "",                            -- Quickshot, triton, AA vehicle, boreas
 	},
 	-- T1 air
 	armap = {
@@ -83,26 +83,26 @@ local labGrids = {
 	},
 
     legap = {
-		"legca", "legfig", "legmos", "legkam", "", "",             -- T1 con, fig/scout, gunship, sucide bomb
+		"legca", "legfig", "legmos", "legkam", "", "",             -- T1 con, fig/scout, gunship, martyr
 		"legcib", "leglts", "legatrans",                           -- juno bomber, light transport, medium transport
 	},
 	-- T2 air
 	armaap = {
 		"armaca", "armhawk", "armbrawl", "armpnix", "", "",              -- T2 con, fig, gunship, bomber
-		"armawac", "armdfly", "armlance", "armsfig2", "", "",            -- radar, transport, torpedo, heavy fighter (mod)
-		"armliche", "armblade", "armstil",                               -- liche, blade, stiletto
+		"armawac", "armdfly", "armlance", "", "", "",                    -- radar, transport, torpedo
+		"armliche", "armblade", "armstil",                               -- liche, hornet, stiletto
 	},
 
 	coraap = {
 		"coraca", "corvamp", "corape", "corhurc", "", "",                -- T2 con, fig, gunship, bomber
-		"corawac", "corseah", "cortitan", "corsfig2", "", "",            -- radar, transport, torpedo, heavy fighter (mod)
-		"corcrwh","corcrw",                                              -- dragon, archaic dragon
+		"corawac", "corseah", "cortitan", "", "", "",                    -- radar, transport, torpedo
+		"corcrwh",                                                       -- dragon
 	},
 
 	legaap = {
-		"legaca", "legafigdef", "legvenator", "legphoenix", "", "",     -- T2 con, defensive fig, interceptor, phoenix
+		"legaca", "legafigdef", "legvenator", "legphoenix", "", "",      -- T2 con, defensive fig, interceptor, phoenix
 		"legwhisper", "legstronghold", "legatorpbomber", "", "", "",     -- radar, transport(gunship), torpedo,
-		"legfort", "legnap", "legmineb", ""	                             -- flying fort, napalmbomber, minebomber
+		"legfort", "", "legmineb", ""	                                 -- flying fort, (blank), minebomber
 	},
 	-- seaplanes
 	armplat = {
@@ -140,7 +140,7 @@ local labGrids = {
 	},
 	-- amphibious labs
 	armamsub = {
-		"armbeaver", "armdecom", "armpincer", "", "", "",      -- ampnibious con, decoy com, t1 amph tank
+		"armbeaver", "armdecom", "armpincer", "", "", "",      -- amph con, decoy com, t1 amph tank
 		"armcroc", "", "", "", "", "",                         -- turtle
 		"", "armjeth", "armaak",                               -- t1 AA bot, t2 AA bot
 	},
@@ -152,9 +152,9 @@ local labGrids = {
 	},
 
 	legamphlab = {
-		"legotter", "legdecom", "legamphtank", "", "", "",	   -- amphibious con, decoy com, t1 amphibious tank
-		"","legfloat", "legamph", "", "", "",                  -- t2 floating tank, t2 amph bot
-		"", "legaabot", "coraak", "",                          -- t1 aa bot, t2 aa bot
+		"legotter", "legdecom", "legamphtank", "", "", "",	   -- amph con, decoy com, t1 amph tank
+		"","legfloat", "legamph", "", "", "",                  -- triton, telchine
+		"", "legaabot", "legadvaabot", "",                     -- t1 AA bot, t2 AA bot
 	},
 	-- hover labs
 	armhp = {
@@ -205,13 +205,13 @@ local labGrids = {
 
 	leggant = {
 		"legelrpcmech", "corkarg", "legjav", "legeheatraymech", "", "",     -- astraeus, karganeth, javelin, sol invictus
-		"corjugg", "corsok", "legeshotgunmech", "legpede", "", "",          -- behemoth, hovertank, praetorian, mukade
+		"", "corsok", "legeshotgunmech", "", "", "",                        -- (blank), hovertank, praetorian
 		"legkeres","legerailtank", "",                                      -- keres, daedalus
 	},
 	-- T3 underwater labs
 	armshltxuw = {
 		"armbantha", "armmar", "armcroc", "", "", "",                       -- titan, marauder, turtle
-		"armlun",                                                          -- lunkhead
+		"armlun",                                                           -- lunkhead
 	},
 
 	corgantuw = {
