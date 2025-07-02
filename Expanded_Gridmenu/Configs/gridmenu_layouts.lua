@@ -14,7 +14,7 @@ local labGrids = {
 
 	leglab = {
 		"legck", "legrezbot", "leggob", "", "", "",               -- T1 con, rez bot, goblin
-		"legbal", "leglob", "legkark", "legcen", "", "",          -- ballista, lobber, karkinos, centaur
+		"legbal", "leglob", "legkark", "legcen", "", "",          -- ballista, satyr, karkinos, phobos
 		"", "", "legaabot",                                       -- aa bot
 	},
 	-- T2 bot
@@ -31,8 +31,8 @@ local labGrids = {
 	},
 
 	legalab = {
-		"legack", "legaceb", "legstr", "corspy", "legdecom", "leginfestor",          -- T2 con, proteus, hoplite, spy, decoycom, infestor
-		"corvoyr", "corspec", "legshot", "leghrk", "", "",                           -- radar bot, jammer bot, phanlax, thanatos
+		"legack", "legaceb", "legstr", "legaspy", "legdecom", "leginfestor",         -- T2 con, proteus, hoplite, spy, decoycom, infestor
+		"legradk", "legjamk", "legshot", "leghrk", "", "",                           -- radar bot, jammer bot, phanlax, thanatos
 		"legbart", "legsrail", "legadvaabot", "leginc", "legamph", "legsnapper",     -- belcher, railgun, AA bot, incinerator, telchine, snapper
     
 	},
@@ -204,9 +204,8 @@ local labGrids = {
 	},
 
 	leggant = {
-		"legelrpcmech", "corkarg", "legjav", "legeheatraymech", "", "",     -- astraeus, karganeth, javelin, sol invictus
-		"", "corsok", "legeshotgunmech", "", "", "",                        -- (blank), hovertank, praetorian
-		"legkeres","legerailtank", "",                                      -- keres, daedalus
+		"legjav", "legkeres", "legeallterrainmech", "legeheatraymech", "", "",        -- javelin, keres, myrmidon, sol invictus
+		"legelrpcmech", "legehovertank", "legeshotgunmech", "legerailtank", "", "",   -- astraeus, hovertank, praetorian, daedalus
 	},
 	-- T3 underwater labs
 	armshltxuw = {
