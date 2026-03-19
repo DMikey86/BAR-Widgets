@@ -2183,7 +2183,7 @@ local unitGrids = {
 			{ "legnanotcplat", },                                  -- fl nano
 			{ },                                                   --
 		}
-},
+	},
 
 }
 unitGrids["dummycom"] = unitGrids["armcom"]
