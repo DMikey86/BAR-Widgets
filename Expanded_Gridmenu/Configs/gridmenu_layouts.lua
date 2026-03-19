@@ -114,6 +114,11 @@ local labGrids = {
 		"corcsa", "corsfig", "corcut", "corsb", "", "",            -- seaplane con, fig, gunship, bomber
 		"corhunt", "corseap",                               -- radar, torpedo
 	},
+
+	legsplab = {
+		"legspcon", "legspfigther", "legspsurfacegunship", "legspbomber", "", "",    -- seaplane con, fig, gunship, bomber
+		"legspradarsonarplane", "legsptorpgunship", "legspcarrier",                  -- radar, torpedo, carrier
+	},
 	-- T1 boats
 	armsy = {
 		"armcs", "armrecl", "armdecade", "", "", "",             -- T1 sea con, rez sub, decade
@@ -126,6 +131,12 @@ local labGrids = {
 		"corpship", "corroy", "", "", "", "",                    -- frigate, destroyer, transport ("cortship",)
 		"corsub", "", "corpt",                            -- sub, missile boat
 	},
+
+	legsy = {
+		"legnavyconship", "legnavyrezsub", "legnavyscout", "", "", "",      -- T1 sea con, rez sub, scout
+		"legnavyfrigate", "legnavydestro", "legnavyartyship", "", "", "",   -- frigate, destroyer, artillery ship,
+		"legnavysub", "", "legnavyaaship",                                  -- sub, AA boat
+	},
 	-- T2 boats
 	armasy = {
 		"armacsub", "armmls", "armcrus", "armmship", "", "",            -- T2 con sub, naval engineer, cruiser, rocket ship
@@ -137,6 +148,12 @@ local labGrids = {
 		"coracsub", "cormls", "corcrus", "cormship", "", "",            -- T2 con sub, naval engineer, cruiser, rocket ship
 		"corantiship", "corsjam", "corbats", "corblackhy", "", "",      -- carrier, jammer, battleship, flagship
 		"corshark", "corssub", "corarch", "corfship", "", "",           -- sub killer, battlesub, AA, flamer ship
+	},
+
+	legadvshipyard = {
+		"leganavyconsub", "leganavyengineer", "leganavycruiser", "leganavymissileship", "leganavyantiswarm", "",   -- T2 con sub, naval engineer, cruiser, rocket ship, antiswarm boat
+		"leganavyantinukecarrier", "leganavyradjamship", "leganavybattleship", "leganavyflagship", "", "",         -- carrier, jammer, battleship, flagship
+		"leganavybattlesub", "leganavyheavysub", "leganavyaaship", "leganavyartyship", "", "",                     -- sub killer, battlesub, AA, T2 arty ship
 	},
 	-- amphibious labs
 	armamsub = {
@@ -216,6 +233,11 @@ local labGrids = {
 	corgantuw = {
 		"corkorg", "corshiva", "corsala", "corparrow", "", "",              -- juggernaut, shiva, salamander, poison arrow
 		"corsok",                                                           -- cataphract
+	},
+
+	leggantuw = {
+		"legeheatraymech", "legjav", "legfloat", "legamph", "", "",        -- sol invictus, javelin, triton, telchine
+		"legehovertank", "leganavybattleship", "", "", "", "",             -- charybdis, scylla (walking battleship)
 	},
 }
 local unitGrids = {
