@@ -1407,7 +1407,7 @@ local unitGrids = {
 		},
 		{
 			{ "armlab", "armvp", "armap", "armsy", },         -- bot lab, veh lab, air lab, shipyard
-			{ "armnanotc", "armnanotcplat", },                -- nano, floating nano
+			{ "armnanotc", "armnanotcplat", "armaap", },      -- nano, floating nano, T2 lab
 			{ "armhp", "armfhp", "armamsub", "armplat", },    -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	},
@@ -1430,7 +1430,7 @@ local unitGrids = {
 		},
 		{
 			{ "corlab", "corvp", "corap", "corsy", },         -- bot lab, veh lab, air lab, shipyard
-			{ "cornanotc", "cornanotcplat", },                -- nano, floating nano
+			{ "cornanotc", "cornanotcplat", "coraap", },      -- nano, floating nano, T2 lab
 			{ "corhp", "corfhp", "coramsub", "corplat", },    -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	},
@@ -1453,7 +1453,7 @@ local unitGrids = {
 		},
 		{
 			{ "leglab", "legvp", "legap", "legsy", },          -- bot lab, veh lab, air lab, shipyard
-			{ "legnanotcplat", "legaap", },                    -- floating nano, T2 lab
+			{ "legnanotc", "legnanotcplat", "legaap", },       -- nano, floating nano, T2 lab
 			{ "leghp", "legfhp", "legamphlab", "legsplab", },  -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	},
@@ -1787,7 +1787,7 @@ local unitGrids = {
 	leganavyconsub = {
 		{
 			{ "leganavalmex", "leganavalfusion", },             -- uw moho, uw fusion,
-			{ "leganavaleconv", "leguwageo" },                  -- floating T2 converter, adv geo powerplant
+			{ "leganavaleconv", "leganavaladvgeo" },            -- floating T2 converter, adv geo powerplant
 			{ "legadvestore", "legamstor", },                   -- uw e stor, uw metal stor
 		},
 		{
