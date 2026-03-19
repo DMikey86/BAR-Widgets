@@ -2185,6 +2185,7 @@ local unitGrids = {
 		}
 },
 
+}
 unitGrids["dummycom"] = unitGrids["armcom"]
 
 if Spring.GetModOptions().experimentalextraunits or Spring.GetModOptions().scavunitsforplayers then
