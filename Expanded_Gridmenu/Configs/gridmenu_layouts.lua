@@ -1299,7 +1299,7 @@ local unitGrids = {
 	legnavyconship = {
 		{
 			{ "legmex", "legtide", "", "", "leguwgeo" },      -- mex, tidal, offshore geo
-			{ "legfeconv", "leggeo", "legt15mex", },          -- floating T1 converter, geo, T1.5 mex
+			{ "legfeconv", "leggeo", "legmext15", },          -- floating T1 converter, geo, T1.5 mex
 			{ "leguwestore", "leguwmstore", },                -- uw e stor, uw m stor
 		},
 		{	
@@ -1439,7 +1439,7 @@ local unitGrids = {
 		{
 			{ "legmex", "legsolar", "legwin", "legadvsol", "leguwgeo", },                -- mex, solar, wind, adv. solar, offshore geo
 			{ "legeconv", "leggeo", "legmext15", "legfeconv", "legtide", },  -- T1 converter, geo, T1.5 legion mex, (fl. T1 converter), (tidal)
-			{ "legestor", "legmstor", "", "leguwestore", "leguwmstor", },    -- e storage, m storage, (uw e stor), (uw m stor)
+			{ "legestor", "legmstor", "", "leguwestore", "leguwmstore", },    -- e storage, m storage, (uw e stor), (uw m stor)
 		},
 		{
 			{ "leglht", "legmg", "", "legdtr", "legfhive",},   -- LLT, machine gun, HLT, riot turret, floating hive
@@ -2171,7 +2171,7 @@ local unitGrids = {
 		{	
 			{ "legtl", "leganavaldefturret", "legacluster", "legfmg", "legfhive", },     -- torp launcher, strider turret, pop-up turret, fl Machine gun, fl Hive
 			{ "leganavalaaturret", "legnavyaaship", },                                   -- fl flak, aa boat
-			{ "legscout", "legnavydestro", },                                            -- scout, destroyer
+			{ "legnavyscout", "legnavydestro", },                                            -- scout, destroyer
 		},
 		{
 			{ "legfrad", "legarad", },                             -- fl radar, adv radar
