@@ -1042,6 +1042,7 @@ local unitGrids = {
 			{ "leghp", "legfhp", },                          -- hover lab, floating hover lab
 		}
 	},
+	
 	-- T1 bot con
 	armck = {
 		{
@@ -1088,6 +1089,7 @@ local unitGrids = {
 			{ "corhp", },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	},
+
    legck = {
 		{
 			{ "legmex", "legsolar", "legwin", "legadvsol", },   -- mex, solar, wind, adv. solar
@@ -1157,6 +1159,7 @@ local unitGrids = {
 			{ "corhp", },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	},
+
     legcv = {
 		{
 			{ "legmex", "legsolar", "legwin", "legadvsol", },   -- mex, solar, wind, adv. solar
@@ -1225,6 +1228,7 @@ local unitGrids = {
 			{ "corhp", },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	},
+
     legca = {
 		{
 			{ "legmex", "legsolar", "legwin", "legadvsol", },   -- mex, solar, wind, adv. solar
@@ -1710,6 +1714,7 @@ local unitGrids = {
 			{ "corplat", },                                     -- seaplane lab (aircon only)
 		}
 	},
+
 	legaca = {
 		{
 			{ "legmoho", "legfus", "legafus", },                -- moho, fusion, afus
@@ -2178,7 +2183,7 @@ local unitGrids = {
 			{ "legnanotcplat", },                                  -- fl nano
 			{ },                                                   --
 		}
-}
+},
 
 unitGrids["dummycom"] = unitGrids["armcom"]
 
